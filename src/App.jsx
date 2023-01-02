@@ -43,7 +43,7 @@ class App extends React.Component {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="flex flex-col items-center justify-center gap-7"
+          className="mt-[-96px] md:mt-0 flex flex-col items-center justify-center gap-7"
         >
           <img
             className=" w-52 h-52 rounded-full"
