@@ -5,6 +5,8 @@ import pic from "./assets/pic.webp";
 import { Typewriter } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import SocialHandle from "./components/SocialHandle";
+import socialLinks from "../constants/socialLinks";
 
 class App extends React.Component {
   constructor() {
@@ -50,7 +52,7 @@ class App extends React.Component {
             src={pic}
             alt="profile pic"
           />
-          <h1 className="text-4xl md:text-7xl tracking-wider font-bold">
+          <h1 className="text-4xl md:text-7xl tracking-wider font-extrabold">
             Neerajkumar
           </h1>
           <div className="text-2xl md:text-4xl text-[#00ff00]">
@@ -66,70 +68,10 @@ class App extends React.Component {
             />
           </div>
           <div className="flex flex-row gap-2">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-            >
-              <SocialIcon
-                className="hover:scale-110 transition-all duration-450"
-                bgColor="white"
-                fgColor="black"
-                url="https://github.com/Neerajkumarc"
-                target={"_blank"}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-            >
-              <SocialIcon
-                className="hover:scale-110 transition-all duration-450"
-                bgColor="white"
-                fgColor="black"
-                url="https://www.linkedin.com/in/neerajkumar31/"
-                target={"_blank"}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.6 }}
-            >
-              <SocialIcon
-                className="hover:scale-110 transition-all duration-450"
-                bgColor="white"
-                fgColor="black"
-                url="https://twitter.com/neerajkumar_31"
-                target={"_blank"}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.9 }}
-            >
-              <SocialIcon
-                className="hover:scale-110 transition-all duration-450"
-                bgColor="white"
-                fgColor="black"
-                url="https://www.instagram.com/neerajchaudhary.31/"
-                target={"_blank"}
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 1.2 }}
-            >
-              <SocialIcon
-                className="hover:scale-110 transition-all duration-450"
-                bgColor="white"
-                fgColor="black"
-                url="https://www.facebook.com/neerajkumar.chaudhary.94695/"
-                target={"_blank"}
-              />
-            </motion.div>
+            {socialLinks.map((url) => {
+              return <SocialHandle key={url} url={url} />;
+              console.log(url);
+            })}
           </div>
         </motion.section>
       </div>
