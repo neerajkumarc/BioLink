@@ -58,10 +58,9 @@ class App extends React.Component {
           <div className="text-2xl md:text-4xl text-[#00ff00]">
             <Typewriter
               words={[
-                "Programmer",
+                "Technophile",
                 "UI/UX Designer",
-                "Software Engineer",
-                "Full-Stack Developer",
+                "Web Developer",
               ]}
               loop={true}
               cursor={true}
