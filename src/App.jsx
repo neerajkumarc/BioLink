@@ -69,7 +69,6 @@ class App extends React.Component {
           <div className="flex flex-row gap-2">
             {socialLinks.map((url) => {
               return <SocialHandle key={url} url={url} />;
-              console.log(url);
             })}
           </div>
         </motion.section>

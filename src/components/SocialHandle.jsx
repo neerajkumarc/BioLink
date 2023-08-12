@@ -10,7 +10,7 @@ export default function SocialHandle({url}) {
     transition={{ delay: 0.6 }}
   >
     <SocialIcon
-      className="hover:scale-110 transition-all duration-450"
+      className="transition-all duration-450 hover:-translate-y-2"
       bgColor="white"
       fgColor="black"
       url={url}
