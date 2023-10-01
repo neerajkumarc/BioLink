@@ -3,7 +3,6 @@ import * as THREE from "three";
 import GLOBE from "vanta/dist/vanta.waves.min.js";
 import pic from "./assets/pic.webp";
 import { Typewriter } from "react-simple-typewriter";
-import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import SocialHandle from "./components/SocialHandle";
 import socialLinks from "../constants/socialLinks";
@@ -27,7 +26,7 @@ class App extends React.Component {
       color: 0x0,
       shininess: 30.0,
       waveHeight: 13.0,
-      zoom: 1.16,
+      zoom: 1.3,
     });
   }
   componentWillUnmount() {
