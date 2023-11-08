@@ -60,6 +60,7 @@ class App extends React.Component {
                 "Technophile",
                 "UI/UX Designer",
                 "Web Developer",
+                "Cyber Enthusiast"
               ]}
               loop={true}
               cursor={true}
