@@ -1,7 +1,7 @@
 import React from "react";
 import * as THREE from "three";
 import GLOBE from "vanta/dist/vanta.waves.min.js";
-import pic from "./assets/pic.webp";
+import pic from "./assets/pic.gif";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import SocialHandle from "./components/SocialHandle";
