@@ -71,6 +71,7 @@ class App extends React.Component {
             })}
           </div>
         </motion.section>
+        <img className="hidden" src="https://hits.sh/neerajk.netlify.app.svg" alt="hits" />
       </div>
     );
   }
